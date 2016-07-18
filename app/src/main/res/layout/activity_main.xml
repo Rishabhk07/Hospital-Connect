@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hptouchsmart.hospitalconnect.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross"
+        android:id="@+id/cross"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_below="@id/cross"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital Connect"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/hos"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/hos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="enter Pincode"
+        android:id="@+id/pin"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Get Hospital in your Area"
+        android:id="@+id/button"
+        />
+
+</RelativeLayout>
